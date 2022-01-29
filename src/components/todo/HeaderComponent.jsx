@@ -12,7 +12,7 @@ class HeaderComponent extends Component {
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
           <div>
             <a href="aboutUs" className="navbar-brand">
-              INTERVIEW GUIDE
+              PrivAffi
             </a>
           </div>
           <ul className="navbar-nav">
@@ -23,54 +23,9 @@ class HeaderComponent extends Component {
                 </Link>
               </li>
             )}
-            <li>
-              <Link className="nav-link" to="/qaHome">
-                Interview Guide Home
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/questions">
-                Interview Guide
-              </Link>
-            </li>
-            <li>
-              <Link className="nav-link" to="/all">
-                QnA Pagination All
-              </Link>
-            </li>
-
-            {isUserLoggedIn && (
-              <li>
-                <Link className="nav-link" to="/todos">
-                  Todos
-                </Link>
-              </li>
-            )}
-            {isUserLoggedIn && (
-              <li>
-                <Link className="nav-link" to="/addQuestion/-1">
-                  Add Questions
-                </Link>
-              </li>
-            )}
             <div>
-              <Link className="nav-link" to="/projects">
-                Projects
-              </Link>
-            </div>
-            <div>
-              <Link className="nav-link" to="/blog/java/streamAPI">
-                Stream API
-              </Link>
-            </div>
-            <div>
-              <Link className="nav-link" to="/interviewProcess">
-                Interview Process
-              </Link>
-            </div>
-            <div>
-              <Link className="nav-link" to="/prepareForInterview">
-                Prepare For Interview
+              <Link className="nav-link" to="/">
+                Product Review
               </Link>
             </div>
             <div>

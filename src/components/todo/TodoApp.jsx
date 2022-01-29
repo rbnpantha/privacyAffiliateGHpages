@@ -9,18 +9,6 @@ import FooterComponent from "./FooterComponent.jsx";
 import LogoutComponent from "./LogoutComponent.jsx";
 import WelcomeComponent from "./WelcomeComponent.jsx";
 import TodoComponent from "./TodoComponent.jsx";
-import QnAJava from "../questionanswer/QnAJava.jsx";
-import QnA from "../questionanswer/QnA.jsx";
-import QnAReact from "../questionanswer/QnAReact.jsx";
-import QnAKafka from "../questionanswer/QnAKafka.jsx";
-import QnACassandra from "../questionanswer/QnACassandra.jsx";
-import QnASQL from "../questionanswer/QnASQL.jsx";
-import AddQuestion from "../questionanswer/AddQuestion.jsx";
-import Projects from "../questionanswer/Projects.jsx";
-import InterviewProcess from "../questionanswer/InterviewProcess.jsx";
-import PrepareForInterview from "../questionanswer/PrepareForInterview.jsx";
-import QnAPaginationAll from "../questionanswer/QnAPaginationAll.jsx";
-import StreamAPIBlog from "../blogs/java/StreamAPIBlog.jsx";
 import PrivacyPolicyMain from "../privacy/PrivacyPolicyMain.jsx";
 import AddressBookPrivacyPolicy from "../privacy/AddressBookPrivacyPolicy.jsx";
 import VocabularyAppPrivacyPolicy from "../privacy/VocabularyAppPrivacyPolicy.jsx";
@@ -47,31 +35,6 @@ class TodoApp extends Component {
               />
               <AuthenticatedRoute path="/logout" component={LogoutComponent} />
 
-              <AuthenticatedRoute
-                path="/addQuestion/:id"
-                component={AddQuestion}
-              />
-
-              <Route path="/qaHome" component={QnA} />
-
-              <Route path="/questions" component={QnAJava} />
-
-              <Route path="/java" component={QnAJava} />
-
-              <Route path="/kafka" component={QnAKafka} />
-
-              <Route path="/cassandra" component={QnACassandra} />
-
-              <Route path="/react" component={QnAReact} />
-
-              <Route path="/sql" component={QnASQL} />
-
-              <Route path="/projects" component={Projects} />
-
-              <Route path="/interviewProcess" component={InterviewProcess} />
-
-              <Route path="/all" component={QnAPaginationAll} />
-
               <Route path="/privacyPolicyMain" component={PrivacyPolicyMain} />
 
               <Route
@@ -87,13 +50,6 @@ class TodoApp extends Component {
               <Route
                 path="/interviewGuidePrivacyPolicy"
                 component={InterviewGuidePrivacyPolicy}
-              />
-
-              <Route path="/blog/java/streamAPI" component={StreamAPIBlog} />
-
-              <Route
-                path="/prepareForInterview"
-                component={PrepareForInterview}
               />
 
               <Route component={ErrorComponent} />
